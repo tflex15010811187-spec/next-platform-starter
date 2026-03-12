@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flextorch Project Designs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins;
+background:#f5f5f5;
+}
+
+header{
+background:black;
+color:white;
+padding:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+color:#ff7a00;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+background-size:cover;
+background-position:center;
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h2{
+font-size:45px;
+}
+
+.hero button{
+background:#ff7a00;
+border:none;
+padding:15px 25px;
+color:white;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+form{
+display:grid;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button.submit{
+background:#ff7a00;
+color:white;
+border:none;
+padding:14px;
+font-size:16px;
+border-radius:6px;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Flextorch</h1>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#gallery">Projects</a>
+<a href="#quote">Get Quote</a>
+</nav>
+</header>
+
+<div class="hero">
+
+<h2>Quality Finish, Lasting Beauty</h2>
+<p>Professional Painting & Finishing Services</p>
+
+<button onclick="document.getElementById('quote').scrollIntoView()">
+Request Quote
+</button>
+
+</div>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Interior Painting</h3>
+<p>Modern interior painting for homes and offices.</p>
+</div>
+
+<div class="card">
+<h3>Exterior Painting</h3>
+<p>Weather-resistant exterior finishing.</p>
+</div>
+
+<div class="card">
+<h3>POP Ceiling</h3>
+<p>Beautiful modern ceiling installation.</p>
+</div>
+
+<div class="card">
+<h3>House Renovation</h3>
+<p>Transform old spaces into beautiful homes.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Our Projects</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+<img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+<img src="https://images.unsplash.com/photo-1600607686527-6fb886090705">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+
+</div>
+
+</section>
+
+<section id="quote">
+
+<h2>Request a Quote</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="text" placeholder="Project Type">
+
+<textarea placeholder="Describe your project"></textarea>
+
+<button class="submit">Submit Request</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>Flextorch Project Designs</p>
+<p>Phone / WhatsApp: 07030186394</p>
+<p>Lagos, Nigeria</p>
+
+</footer>
+
+</body>
+</html>
